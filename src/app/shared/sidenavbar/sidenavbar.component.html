@@ -1,0 +1,54 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button aria-label="Menu icon" (click)="toggleMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <h1>Menu</h1>
+</mat-toolbar>
+
+<mat-sidenav-container autosize>
+  <mat-sidenav 
+    [ngClass]="!isCollapsed ? 'expanded' : ''" 
+    [opened]="!isMobile || !isCollapsed">
+    
+    <mat-nav-list>
+      <a mat-list-item routerLink="/profile">
+        <mat-icon>person</mat-icon>
+        <span *ngIf="!isCollapsed">Profile</span>
+      </a>
+      <a mat-list-item routerLink="/service">
+        <mat-icon>build</mat-icon>
+        <span *ngIf="!isCollapsed">Service</span>
+      </a>
+      <a mat-list-item routerLink="/home">
+        <mat-icon>home</mat-icon>
+        <span *ngIf="!isCollapsed">Home</span>
+      </a>
+      <a mat-list-item routerLink="/login">
+        <mat-icon>login</mat-icon>
+        <span *ngIf="!isCollapsed">Login</span>
+      </a>
+      <a mat-list-item routerLink="/register">
+        <mat-icon>person_add</mat-icon>
+        <span *ngIf="!isCollapsed">Register</span>
+      </a>
+      <a mat-list-item routerLink="/about">
+        <mat-icon>info</mat-icon>
+        <span *ngIf="!isCollapsed">About</span>
+      </a>
+      <a mat-list-item routerLink="/restaurant-search">
+        <mat-icon>restaurant</mat-icon>
+        <span *ngIf="!isCollapsed">Restaurant</span>
+      </a>
+      <a mat-list-item routerLink="/template">
+        <mat-icon>description</mat-icon>
+        <span *ngIf="!isCollapsed">Template</span>
+      </a>
+
+    </mat-nav-list>
+    
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,52 @@
+<!-- <nav>
+  <li>
+    <a routerLink="/profile">profile</a>
+    <a routerLink="/service">service</a>
+    <a routerLink="/home">home</a>
+    <a routerLink="/login">login</a>
+    <a routerLink="/register">register</a>
+    <a routerLink="/about">about</a>
+    <a routerLink ="/restaurant-search">resturent</a>
+  </li>
+</nav> -->
+
+<!-- <mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" opened>
+    <mat-nav-list>
+
+      <a mat-list-item routerLink="/home" routerLinkActive="active-link">Home</a>
+      <a mat-list-item routerLink="/login" routerLinkActive="active-link">Login</a>
+      <a mat-list-item routerLink="/register" routerLinkActive="active-link">Register</a>
+      <a mat-list-item routerLink="/profile" routerLinkActive="active-link">Profile</a>
+      <a mat-list-item routerLink="/service" routerLinkActive="active-link">Service</a>
+      <a mat-list-item routerLink="/about" routerLinkActive="active-link">About</a>
+      <a mat-list-item routerLink="/template" routerLinkActive="active-link">template</a>
+      <a mat-list-item routerLink="/restaurant-search" routerLinkActive="active-link">Restaurant</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My Application</span>
+    </mat-toolbar>
+    
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
+
+<!-- <app-navbar (toggleSidenav)="onToggleSidenav()"></app-navbar> -->
+
+
+
+<app-sidenavbar></app-sidenavbar>
+
+<router-outlet></router-outlet>
+
+
+
+
+<!-- <router-outlet /> -->

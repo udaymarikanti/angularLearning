@@ -1,0 +1,15 @@
+<!-- <div class="container mt-5">
+    <h2>Angular Star Rating Example</h2>
+    <ngb-rating [max]="5" [(rate)]="starRating" [readonly]="false"></ngb-rating>
+    <p>Your rating: {{ starRating }}</p>
+  </div>
+   -->
+   <div class="form-group">
+    <label for="comments">comments</label>
+    <input type="text" id="comments" name="comments" (rateChange)="onRatingChange()" class="form-control">
+  </div>
+
+   <div class="form-group">
+    <label for="rating">Rating</label>
+    <ngb-rating [max]="5" [(rate)]="rating.rating" (rateChange)="onRatingChange()"></ngb-rating>
+  </div>
